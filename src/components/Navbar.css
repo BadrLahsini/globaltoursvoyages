@@ -1,0 +1,149 @@
+/* ----------------------- */
+/*      NAVIGATION           */
+/* ----------------------- */
+
+.main-nav {
+  display: flex;
+  align-items: stretch;
+  height: 6rem;
+  border-bottom: 2px solid;
+  border-color: rgba(255, 227, 77, 0.3);
+  background-image: linear-gradient(
+    to right,
+    rgba(34, 34, 34, 0.3),
+    rgba(34, 34, 34, 0.3)
+  );
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(34, 34, 34, 0.8);
+  background-color: rgba(82, 70, 56, 0.9);
+
+  z-index: 5;
+}
+
+.navbar-logo {
+  flex-grow: 0;
+  align-self: center;
+  margin-left: 5rem;
+}
+
+.main-logo {
+  height: 4.5rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 3rem;
+  /* align-items: stretch; */
+  align-items: center;
+  margin-right: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.menu-item {
+  /* font-size: 14px; */
+  /* display: flex; */
+  position: relative;
+}
+
+.main-nav-link,
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f8f9fa;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 2rem;
+  width: 100%;
+  cursor: pointer;
+  /* padding: 0.5rem 0; */
+
+  /* height: 100%; */
+}
+
+/* .main-nav-link:hover,
+.main-nav-link:active {
+  box-shadow: 0 4px 2px -2px #d46415;
+} */
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  left: auto;
+  list-style: none;
+  background-color: rgba(82, 70, 56, 0.9);
+  border: 2px solid;
+  border-color: rgba(255, 227, 77, 0.3);
+
+  min-width: 18rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 0.3rem;
+  z-index: 9999;
+  display: none;
+  padding: 1rem;
+  box-shadow: 4px 3px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown.show {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.languagewrapper .dropdown {
+  min-width: 7rem;
+  gap: 1.6rem;
+  /* right: 1rem; */
+}
+
+.languagewrapper a,
+.languagewrapper li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.28em;
+  vertical-align: 0.09em;
+  border-top: 0.35em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.languagewrapper {
+  min-width: 7rem;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+  margin-right: 1.6rem;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  color: #f8f9fa;
+  border: none;
+  position: relative;
+}
+
+.languagePicker {
+  position: absolute;
+}
+
+.langIcon {
+  width: 2.2rem;
+}
